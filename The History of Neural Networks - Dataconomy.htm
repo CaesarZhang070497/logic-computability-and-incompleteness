@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>         <html class="no-js lt-ie9 lt-ie10"  lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"  lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"  lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<title itemprop="name">The History of Neural Networks - Dataconomy</title>
+
+		<!-- WP Header -->
+		                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v9.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Crafting neural network architectures is of the utmost importance for the sustainable progress of the field of Deep Learning."/>
+<link rel="canonical" href="https://dataconomy.com/2017/04/history-neural-networks/" />
+<link rel="publisher" href="https://plus.google.com/+Dataconomy1"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The History of Neural Networks - Dataconomy" />
+<meta property="og:description" content="Crafting neural network architectures is of the utmost importance for the sustainable progress of the field of Deep Learning." />
+<meta property="og:url" content="https://dataconomy.com/2017/04/history-neural-networks/" />
+<meta property="og:site_name" content="Dataconomy" />
+<meta property="article:publisher" content="https://www.facebook.com/DataconomyMedia" />
+<meta property="article:tag" content="Deep learning" />
+<meta property="article:tag" content="neural networks" />
+<meta property="article:section" content="Data Science" />
+<meta property="article:published_time" content="2017-04-19T09:00:14+00:00" />
+<meta property="article:modified_time" content="2017-04-18T15:06:32+00:00" />
+<meta property="og:updated_time" content="2017-04-18T15:06:32+00:00" />
+<meta property="og:image" content="https://dataconomy.com/wp-content/uploads/2017/04/nerve-cell-2213009-620x349.jpg" />
+<meta property="og:image:secure_url" content="https://dataconomy.com/wp-content/uploads/2017/04/nerve-cell-2213009-620x349.jpg" />
+<meta property="og:image:width" content="620" />
+<meta property="og:image:height" content="349" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Crafting neural network architectures is of the utmost importance for the sustainable progress of the field of Deep Learning." />
+<meta name="twitter:title" content="The History of Neural Networks - Dataconomy" />
+<meta name="twitter:site" content="@DataconomyMedia" />
+<meta name="twitter:image" content="https://dataconomy.com/wp-content/uploads/2017/04/nerve-cell-2213009.jpg" />
+<meta name="twitter:creator" content="@DataconomyMedia" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"Organization","url":"https://dataconomy.com/","sameAs":["https://www.facebook.com/DataconomyMedia","https://plus.google.com/+Dataconomy1","https://twitter.com/DataconomyMedia"],"@id":"https://dataconomy.com/#organization","name":"Dataconomy GMBH","logo":"https://dataconomy.com/wp-content/uploads/2016/12/dataconomy-logo-01-e1480693910116.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dataconomy &raquo; Feed" href="https://dataconomy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dataconomy &raquo; Comments Feed" href="https://dataconomy.com/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Dataconomy &raquo; iCal Feed" href="https://dataconomy.com/events/?ical=1" />
+<link rel="alternate" type="application/rss+xml" title="Dataconomy &raquo; The History of Neural Networks Comments Feed" href="https://dataconomy.com/2017/04/history-neural-networks/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.4.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.4.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+
+	var disableStr = 'ga-disable-UA-47905792-2';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-47905792-2', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dataconomy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='itempropwp-css'  href='https://dataconomy.com/wp-content/plugins/itempropwp/assets/css/itempropwp.css?ver=3.5.201706131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://dataconomy.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bcct_style-css'  href='https://dataconomy.com/wp-content/plugins/better-click-to-tweet/assets/css/styles.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://dataconomy.com/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://dataconomy.com/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='https://dataconomy.com/wp-content/plugins/simple-embed-code/css/video-container.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='vwcss-icon-iconic-css'  href='https://dataconomy.com/wp-content/themes/sprout/components/font-icons/iconic/css/iconic.css?ver=1.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vwcss-icon-social-css'  href='https://dataconomy.com/wp-content/themes/sprout/components/font-icons/social-icons/css/zocial.css?ver=1.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vwcss-bootstrap-css'  href='https://dataconomy.com/wp-content/themes/sprout/css/bootstrap.css?ver=1.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vwcss-mmenu-css'  href='https://dataconomy.com/wp-content/themes/sprout/js/jquery-mmenu/css/jquery.mmenu.custom.css?ver=1.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vwcss-theme-css'  href='https://dataconomy.com/wp-content/themes/sprout/style.css?ver=1.5.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://dataconomy.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://dataconomy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"[]","home_url":"https:\/\/dataconomy.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://dataconomy.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/dataconomy.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://dataconomy.com/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.7.3'></script>
+<script type='text/javascript' src='https://dataconomy.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var vw_post_views = {"ajaxurl":"https:\/\/dataconomy.com\/wp-admin\/admin-ajax.php","post_id":"17754"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://dataconomy.com/wp-content/themes/sprout/inc/post-views/post-views-ajax.js?ver=5.2.2'></script>
+<link rel='https://api.w.org/' href='https://dataconomy.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dataconomy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dataconomy.com/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://dataconomy.com/?p=17754' />
+<link rel="alternate" type="application/json+oembed" href="https://dataconomy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdataconomy.com%2F2017%2F04%2Fhistory-neural-networks%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://dataconomy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdataconomy.com%2F2017%2F04%2Fhistory-neural-networks%2F&#038;format=xml" />
+
+
+<!-- List Site Contributors Scripts - Start -->
+<link rel="stylesheet" href="https://dataconomy.com/wp-content/plugins/list-site-contributors/css/list_site_contributors.css" type="text/css" media="screen"/>
+
+<!-- List Site Contributors End -->
+
+
+<link rel="stylesheet" href="https://dataconomy.com/wp-content/plugins/wp-synhighlight/themes/default/wp-synhighlighter.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="https://dataconomy.com/wp-content/plugins/wp-synhighlight/themes/default/wp-synhighlighter.js"></script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://dataconomy.com"><link rel="https://theeventscalendar.com/" href="https://dataconomy.com/wp-json/tribe/events/v1/" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["artificial-intelligence","data-science","machine-learning"],"pageAttributes":["deep-learning","neural-networks"],"pagePostAuthor":"Eugenio Culurciello"};
+
+	// if dataLayer contains ecommerce purchase data, check whether it has been already tracked
+	if ( dataLayer_content.transactionId || ( dataLayer_content.ecommerce && dataLayer_content.ecommerce.purchase ) ) {
+		// read order id already tracked from cookies
+		var gtm4wp_orderid_tracked = "";
+		var gtm4wp_cookie = "; " + document.cookie;
+		var gtm4wp_cookie_parts = gtm4wp_cookie.split( "; gtm4wp_orderid_tracked=" );
+		if ( gtm4wp_cookie_parts.length == 2 ) {
+			gtm4wp_orderid_tracked = gtm4wp_cookie_parts.pop().split(";").shift();
+		}
+
+		// check enhanced ecommerce
+		if ( dataLayer_content.ecommerce && dataLayer_content.ecommerce.purchase ) {
+			if ( gtm4wp_orderid_tracked && ( dataLayer_content.ecommerce.purchase.actionField.id == gtm4wp_orderid_tracked ) ) {
+				delete dataLayer_content.ecommerce.purchase;
+			} else {
+				gtm4wp_orderid_tracked = dataLayer_content.ecommerce.purchase.actionField.id;
+			}
+		}
+
+		// check standard ecommerce
+		if ( dataLayer_content.transactionId ) {
+			if ( gtm4wp_orderid_tracked && ( dataLayer_content.transactionId == gtm4wp_orderid_tracked ) ) {
+				delete dataLayer_content.transactionId;
+				delete dataLayer_content.transactionDate;
+				delete dataLayer_content.transactionType;
+				delete dataLayer_content.transactionAffiliation;
+				delete dataLayer_content.transactionTotal;
+				delete dataLayer_content.transactionShipping;
+				delete dataLayer_content.transactionTax;
+				delete dataLayer_content.transactionPaymentType;
+				delete dataLayer_content.transactionCurrency;
+				delete dataLayer_content.transactionShippingMethod;
+				delete dataLayer_content.transactionPromoCode;
+				delete dataLayer_content.transactionProducts;
+			} else {
+				gtm4wp_orderid_tracked = dataLayer_content.transactionId;
+			}
+		}
+
+		if ( gtm4wp_orderid_tracked ) {
+			var gtm4wp_orderid_cookie_expire = new Date();
+			gtm4wp_orderid_cookie_expire.setTime( gtm4wp_orderid_cookie_expire.getTime() + (365*24*60*60*1000) );
+			var gtm4wp_orderid_cookie_expires = "expires="+ gtm4wp_orderid_cookie_expire.toUTCString();
+			document.cookie = "gtm4wp_orderid_cookie_expire=" + gtm4wp_orderid_tracked + ";" + gtm4wp_orderid_cookie_expire + ";path=/";
+		}
+
+	}
+
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WX8MSPS');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><!-- Site Meta From Theme -->
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link rel="pingback" href="https://dataconomy.com/xmlrpc.php">
+
+<meta name="description" content="Bridging the gap between technology and business">
+
+<link href="//www.google-analytics.com" rel="dns-prefetch">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+
+<link rel="shortcut icon" href="https://dataconomy.com/wp-content/uploads/2015/08/dcm-16x16.png">
+<link rel="apple-touch-icon" href="https://dataconomy.com/wp-content/uploads/2015/08/dcm-59x59.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://dataconomy.com/wp-content/uploads/2015/08/dcm-72x72.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://dataconomy.com/wp-content/uploads/2015/08/dcm-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://dataconomy.com/wp-content/uploads/2015/08/dcm-144x144.png">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- End Site Meta From Theme -->		<!-- Facebook Integration -->
+
+		<meta property="og:site_name" content="Dataconomy">
+
+					<meta property="og:title" content="The History of Neural Networks">
+			<meta property="og:description" content="Deep neural networks and Deep Learning are powerful and popular algorithms. And a lot of their success lays in the careful design of the neural network architecture. I wanted to revisit the history of neural network design in the last few years and in the context of Deep Learning. For">
+			<meta property="og:url" content="https://dataconomy.com/2017/04/history-neural-networks/"/>
+						<meta property="og:image" content="https://dataconomy.com/wp-content/uploads/2017/04/nerve-cell-2213009.jpg" />
+
+
+		<!-- End Facebook Integration -->
+				<script type="text/javascript">
+			var cli_flush_cache=2;
+		</script>
+		<style type="text/css" id="syntaxhighlighteranchor"></style>
+		<style id="vw-custom-font" type="text/css">
+
+					</style>
+			<!-- Theme's Custom CSS -->
+	<style type="text/css">
+
+		a, a:hover,
+		.vw-page-title-box .vw-label,
+		.vw-post-categories a,
+		.vw-page-subtitle,
+		.vw-review-total-score,
+		.vw-breaking-news-date,
+		.vw-date-box-date,
+		.vw-post-style-classic .vw-post-box-title a:hover,
+		.vw-post-likes-count.vw-post-liked .vw-icon,
+		.vw-menu-location-bottom .main-menu-link:hover,
+		.vw-accordion-header.ui-accordion-header-active span,
+		.vw-404-text,
+		#wp-calendar thead,
+		.vw-accordion .ui-state-hover span,
+		.vw-breadcrumb a:hover,
+		.vw-post-tabed-tab.ui-state-active, .vw-post-tabed-tab.ui-state-hover a,
+		.vw-tabs.vw-style-top-tab .vw-tab-title.active,
+		h1 em, h2 em, h3 em, h4 em, h5 em, h6 em
+		{
+			color: #3274b1;
+		}
+
+		.vw-site-social-profile-icon:hover,
+		.vw-breaking-news-label,
+		.vw-author-socials a:hover,
+		.vw-post-style-box:hover,
+		.vw-post-box:hover .vw-post-format-icon i,
+		.vw-gallery-direction-button:hover,
+		.widget_tag_cloud .tagcloud a:hover,
+		.vw-page-navigation-pagination .page-numbers:hover,
+		.vw-page-navigation-pagination .page-numbers.current,
+		#wp-calendar tbody td:hover,
+		.vw-widget-category-post-count,
+		.vwspc-section-full-page-link:hover .vw-button,
+
+		.vw-tag-links a,
+		.vw-hamburger-icon:hover,
+		.pace .pace-progress,
+		.vw-review-summary-bar .vw-review-score,
+		.vw-review-total-score span, .vw-review-score-percentage .vw-review-item-score, .vw-review-score-points .vw-review-item-score,
+		.vw-pricing-featured .vw-pricing-header,
+		.vw-bxslider .bx-prev:hover, .vw-bxslider .bx-next:hover,
+		.no-touch input[type=button]:hover, .no-touch input[type=submit]:hover, .no-touch button:hover, .no-touch .vw-button:hover,
+		.vw-page-content .vw-page-title-box .vw-label,
+		.vw-breaking-news-title,
+		.vw-post-style-small-left-thumbnail .vw-post-view-count,
+		.vw-quote-icon,
+		.vw-dropcap-circle, .vw-dropcap-box,
+		.vw-accordion .ui-icon:before,
+		.vw-post-categories .vw-sticky-link,
+		.vw-pagination-load-more:hover
+		{
+			background-color: #3274b1;
+		}
+
+		.vw-about-author-section .vw-author-name,
+		.vw-post-meta-large .vw-date-box,
+		#wp-calendar caption,
+		.vw-widget-feedburner-text,
+		.vw-login-title,
+		.widget_search label,
+		.widget_vw_widget_author .vw-widget-author-title
+		{
+			border-color: #3274b1;
+		}
+
+		.vw-menu-location-top.sf-arrows .main-menu-link.sf-with-ul:after {
+			border-top-color: #888888;
+		}
+		.vw-menu-location-top.sf-arrows .sub-menu-link.sf-with-ul:after {
+			border-left-color: #888888;
+		}
+
+		.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after {
+			border-top-color: #3274b1 !important;
+		}
+
+		.vw-menu-location-top .main-menu-link,
+		.vw-top-bar .vw-site-social-profile-icon,
+		.vw-top-bar-right .vw-cart-button, .vw-top-bar-right .vw-instant-search-buton {
+			color: #888888;
+		}
+
+		.vw-menu-location-main .main-menu-item.current-menu-item,
+		.vw-menu-location-main .main-menu-item.current-menu-parent,
+		.vw-menu-location-main .main-menu-item.current-menu-ancestor {
+			background-color: #ffffff;
+			color: #3e3e3e;
+		}
+
+		.vw-menu-location-top .main-menu-item:hover .main-menu-link {
+			color: #3e3e3e;
+		}
+
+				.vw-site-header-style-left-logo-right-menu .vw-logo-wrapper {
+			min-width: 345px;
+		}
+
+		/* Header font */
+		input[type=button], input[type=submit], button, .vw-button,
+		.vw-header-font-family,
+		.vw-copyright {
+			font-family: Open Sans;
+		}
+
+		/* Body font */
+		.vw-breaking-news-link {
+			font-family: Open Sans;
+		}
+
+		.vw-page-title-section.vw-has-background .col-sm-12 {
+			padding-top: 150px;
+		}
+
+		.vw-sticky-wrapper.is-sticky .vw-menu-main-wrapper.vw-sticky {
+			background-color: rgba(255,255,255,0.95);
+		}
+
+		/* WooCommerce */
+
+		.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price,
+		.woocommerce #content div.product p.price, .woocommerce #content div.product span.price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-page #content div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page div.product p.price, .woocommerce-page div.product span.price,
+		.woocommerce .widget_shopping_cart .widget_shopping_cart_content .total .amount, .woocommerce-page .widget_shopping_cart .widget_shopping_cart_content .total .amount,
+		.woocommerce .product_list_widget .quantity, .woocommerce .product_list_widget .amount, .woocommerce-page .product_list_widget .quantity, .woocommerce-page .product_list_widget .amount
+		{
+			color: #3274b1;
+		}
+
+		.woocommerce .widget_layered_nav_filters ul li a, .woocommerce-page .widget_layered_nav_filters ul li a,
+		.widget_product_tag_cloud .tagcloud a:hover, .widget_tag_cloud .tagcloud a:hover,
+		woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover,
+		.woocommerce span.onsale, .woocommerce-page span.onsale,
+		.vw-cart-button-count
+		{
+			background-color: #3274b1;
+		}
+
+		/* bbPress */
+		#bbpress-forums .bbp-forum-title {
+			color: #3e3e3e;
+		}
+
+		/* buddypress */
+		#buddypress div.item-list-tabs ul li.current a:hover, #buddypress div.item-list-tabs ul li.selected a:hover,
+		#buddypress .comment-reply-link:hover, #buddypress a.button:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress input[type=submit]:hover, #buddypress ul.button-nav li a:hover, a.bp-title-button:hover
+		{
+			background-color: #3274b1;
+		}
+
+		/* Custom Styles */
+		                    .vw-sticky-sidebar-wrapper {
+    margin-left: -15px;
+}                	</style>
+	<!-- End Theme's Custom CSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://dataconomy.com/rsslatest.xml" /><style type="text/css" title="dynamic-css" class="options-output">.vw-site-header-inner{padding-top:15px;padding-bottom:10px;}.vw-bg-ads-enabled .mm-page{background-repeat:repeat-y;}h1, h2, h3, h4, h5, h6, .vw-header-font,.vw-post-box.vw-post-format-link a,.vw-social-counter-count,.vw-page-navigation-pagination .page-numbers,#wp-calendar caption,.vw-accordion-header-text,.vw-tab-title,.vw-review-item-title,.vw-pagination-load-more{font-family:"Open Sans";text-transform:uppercase;letter-spacing:-1px;font-weight:800;font-style:normal;color:#3e3e3e;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1, h2, h3, h4, h5, h6, .vw-header-font,.wf-loading .vw-post-box.vw-post-format-link a,.wf-loading .vw-social-counter-count,.wf-loading .vw-page-navigation-pagination .page-numbers,.wf-loading #wp-calendar caption,.wf-loading .vw-accordion-header-text,.wf-loading .vw-tab-title,.wf-loading .vw-review-item-title,.wf-loading .vw-pagination-load-more,{opacity: 0;}.ie.wf-loading h1, h2, h3, h4, h5, h6, .vw-header-font,.ie.wf-loading .vw-post-box.vw-post-format-link a,.ie.wf-loading .vw-social-counter-count,.ie.wf-loading .vw-page-navigation-pagination .page-numbers,.ie.wf-loading #wp-calendar caption,.ie.wf-loading .vw-accordion-header-text,.ie.wf-loading .vw-tab-title,.ie.wf-loading .vw-review-item-title,.ie.wf-loading .vw-pagination-load-more,{visibility: hidden;}.vw-menu-location-main .main-menu-link{font-family:"Open Sans";letter-spacing:1px;font-weight:700;font-style:normal;color:#fff;font-size:13px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .vw-menu-location-main .main-menu-link,{opacity: 0;}.ie.wf-loading .vw-menu-location-main .main-menu-link,{visibility: hidden;}body,cite{font-family:"Open Sans";font-weight:400;font-style:normal;color:#666666;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading body,.wf-loading cite,{opacity: 0;}.ie.wf-loading body,.ie.wf-loading cite,{visibility: hidden;}.vw-logo-link{margin-top:30px;margin-right:0;margin-bottom:30px;margin-left:0;}.vw-menu-additional-logo img{margin-top:8px;margin-right:0;margin-bottom:10px;margin-left:10px;}body{background-color:#f2f2f2;}.vw-site-header,.vw-site-header-background{background-color:#f2f2f2;}.vw-site-wrapper,.vw-page-navigation-pagination{background-color:#ffffff;}.vw-top-bar{background:#333333;}.vw-menu-location-top .sub-menu,.vw-menu-location-top .main-menu-item:hover .main-menu-link{background:#ffffff;}.vw-menu-location-top .sub-menu-link{color:#111111;}.vw-menu-location-top .sub-menu-link:hover{color:#888888;}.vw-menu-location-top .sub-menu-link:hover{background:#f5f5f5;}.vw-menu-main-wrapper{background:rgba(255,255,255,0);}.vw-menu-location-main .main-menu-item{color:#888888;}.vw-menu-location-main .main-menu-item:hover{color:#111111;}.vw-menu-location-main .main-menu-item:hover .main-menu-link{background:#ffffff;}.vw-menu-location-main .sub-menu{background:#ffffff;}.vw-menu-location-main .sub-menu-link{color:#111111;}.vw-menu-location-main .sub-menu-link:hover{color:#888888;}.vw-menu-location-main .sub-menu-link:hover{background:#f5f5f5;}.vw-site-footer{background-color:#222222;}.vw-site-footer-sidebars h1,.vw-site-footer-sidebars h2,.vw-site-footer-sidebars h3,.vw-site-footer-sidebars h4,.vw-site-footer-sidebars h5,.vw-site-footer-sidebars h6,.vw-site-footer-sidebars .widget-title,.vw-site-footer-sidebars .vw-widget-category-title{color:#ffffff;}.vw-site-footer-sidebars{color:#dcdcdc;}.vw-bottom-bar{background:#111111;}.vw-bottom-bar{color:#b4b4b4;}</style>		<!-- End WP Header -->
+
+	</head>
+	<body id="site-top" class="post-template-default single single-post postid-17754 single-format-standard tribe-no-js vw-site-enable-sticky-menu vw-site-layout-full-width vw-post-layout-full-width">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WX8MSPS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<!-- Site Wrapper -->
+		<div class="vw-site-wrapper">
+
+			<!-- Top Bar -->
+<div class="vw-top-bar vw-top-bar-breaking-social">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="vw-top-bar-inner">
+
+					<div class="vw-top-bar-left">
+						<div class="vw-breaking-news-bar">
+	<div class="vw-breaking-news">
+		<span class="vw-breaking-news-title vw-header-font">BREAKING</span>
+
+		<ul class="vw-breaking-news-list">
+
+
+
+				<li><a href="https://dataconomy.com/2019/08/which-industries-reap-the-biggest-benefits-from-predictive-maintenance-and-why/" rel="bookmark">Which Industries Reap The Biggest Benefits From Predictive Maintenance And Why</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/08/why-an-online-global-workforce-is-the-future-of-construction/" rel="bookmark">Why an online, global workforce could be the future of construction</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/why-96-of-enterprises-face-ai-training-data-issues/" rel="bookmark">Why 96% of Enterprises Face AI Training Data Issues</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/why-analytics-platforms-are-failing-your-data-scientists/" rel="bookmark">Why analytics platforms are failing your Data Scientists</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/three-trends-in-data-science-you-should-know/" rel="bookmark">Three Trends in Data Science Jobs You Should Know</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/how-do-systemic-approaches-to-it-operations-impact-the-business-culture/" rel="bookmark">How do systemic approaches to IT operations impact the business culture?</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/how-are-dating-apps-using-your-data/" rel="bookmark">How Is Data Affecting Your Dating Life?</a></li>
+
+
+				<li><a href="https://dataconomy.com/2019/07/have-we-lost-the-cancer-battle-no-say-big-data-and-machine-learning/" rel="bookmark">Have we lost the cancer battle? No! &#8211; say Big Data and Machine Learning</a></li>
+
+
+		</ul>
+	</div>
+</div>					</div>
+
+					<div class="vw-top-bar-right">
+						<span class="vw-site-social-profile"><a class="vw-site-social-profile-icon vw-site-social-facebook" href="https://www.facebook.com/DataconomyMedia/" target="_blank" title="Facebook"><i class="vw-icon icon-social-facebook"></i></a><a class="vw-site-social-profile-icon vw-site-social-gplus" href="https://plus.google.com/+Dataconomy1/" target="_blank" title="Google+"><i class="vw-icon icon-social-gplus"></i></a><a class="vw-site-social-profile-icon vw-site-social-instagram" href="https://instagram.com/dataconomy/" target="_blank" title="Instagram"><i class="vw-icon icon-social-instagram"></i></a><a class="vw-site-social-profile-icon vw-site-social-linkedin" href="https://www.linkedin.com/company/dataconomy-media/" target="_blank" title="LinkedIn"><i class="vw-icon icon-social-linkedin"></i></a><a class="vw-site-social-profile-icon vw-site-social-twitter" href="https://twitter.com/DataconomyMedia" target="_blank" title="Twitter"><i class="vw-icon icon-social-twitter"></i></a><a class="vw-site-social-profile-icon vw-site-social-youtube" href="https://www.youtube.com/channel/UC8x0-23MLoRgs5ee4uias4w" target="_blank" title="Youtube"><i class="vw-icon icon-social-youtube"></i></a></span>
+								<span class="vw-instant-search-buton main-menu-item">
+			<a class="vw-instant-search-buton main-menu-link"><i class="vw-icon icon-iconic-search"></i></a>
+		</span>
+							</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- End Top Bar -->
+			<!-- Site Header : Left Logo -->
+<header class="vw-site-header vw-site-header-style-left-logo clearfix"  itemscope itemtype="http://schema.org/WPHeader" >
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="vw-site-header-inner">
+					<!-- Logo -->
+<div class="vw-logo-wrapper vw-has-logo">
+
+	<a class="vw-logo-link" href="https://dataconomy.com"  itemprop="url" >
+
+<!-- End Main Menu -->
+	<!-- Mobile Menu -->
+<nav class="vw-menu-mobile-wrapper">
+
+	<ul id="menu-main-menu-1" class="vw-menu-location-mobile"><li class="nav-menu-item-13397 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children"><a href="https://dataconomy.com/" class="menu-link main-menu-link"><span>Home</span></a>
+<ul class="sub-menu menu-odd  menu-depth-1">
+	<li class="nav-menu-item-15693 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/about-us/" class="menu-link sub-menu-link"><span>About Us</span></a></li>
+	<li class="nav-menu-item-15701 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/newsletter-subscription/" class="menu-link sub-menu-link"><span>Newsletter</span></a></li>
+	<li class="nav-menu-item-18382 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/submit/" class="menu-link sub-menu-link"><span>Submit</span></a></li>
+</ul>
+</li>
+<li class="nav-menu-item-15482 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://dataconomy.com/events-overview/" class="menu-link main-menu-link"><span>Events</span></a>
+<ul class="sub-menu menu-odd  menu-depth-1">
+	<li class="nav-menu-item-15481 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://dataconomy.com/events/" class="menu-link sub-menu-link"><span>Calendar</span></a></li>
+	<li class="nav-menu-item-15532 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/community/" class="menu-link sub-menu-link"><span>Community</span></a></li>
+	<li class="nav-menu-item-15548 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-natives/" class="menu-link sub-menu-link"><span>Data Natives 2019</span></a></li>
+</ul>
+</li>
+<li class="nav-menu-item-15885 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="https://dataconomy.com/data-science/" class="menu-link main-menu-link"><span>Data Science</span></a>
+<ul class="sub-menu menu-odd  menu-depth-1">
+	<li class="nav-menu-item-15864 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/big-data/" class="menu-link sub-menu-link"><span>Big Data</span></a></li>
+	<li class="nav-menu-item-15866 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/machine-learning/" class="menu-link sub-menu-link"><span>Machine Learning</span></a></li>
+	<li class="nav-menu-item-15863 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/artificial-intelligence/" class="menu-link sub-menu-link"><span>Artificial Intelligence</span></a></li>
+	<li class="nav-menu-item-15879 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/business-intelligence/" class="menu-link sub-menu-link"><span>Business Intelligence</span></a></li>
+	<li class="nav-menu-item-15865 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/iot/" class="menu-link sub-menu-link"><span>IoT</span></a></li>
+	<li class="nav-menu-item-15867 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/data-science-101/" class="menu-link sub-menu-link"><span>Data Science 101</span></a></li>
+	<li class="nav-menu-item-15883 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/data-science/its-all-data/" class="menu-link sub-menu-link"><span>It&#8217;s All Data</span></a></li>
+</ul>
+</li>
+<li class="nav-menu-item-15712 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link"><span>Tech Trends</span></a>
+<ul class="sub-menu menu-odd  menu-depth-1">
+	<li class="nav-menu-item-15710 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/tech-trends/fintech/" class="menu-link sub-menu-link"><span>FinTech</span></a></li>
+	<li class="nav-menu-item-15711 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/tech-trends/healthtech/" class="menu-link sub-menu-link"><span>HealthTech</span></a></li>
+	<li class="nav-menu-item-15875 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/tech-trends/startups/" class="menu-link sub-menu-link"><span>Startups</span></a></li>
+</ul>
+</li>
+<li class="nav-menu-item-15578 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/conversations/" class="menu-link main-menu-link"><span>Conversations</span></a></li>
+<li class="nav-menu-item-12899 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link"><span>Careers</span></a>
+<ul class="sub-menu menu-odd  menu-depth-1">
+	<li class="nav-menu-item-3998 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://jobs.dataconomy.com" class="menu-link sub-menu-link"><span>Job Board</span></a></li>
+	<li class="nav-menu-item-12898 sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://dataconomy.com/career-opportunities/" class="menu-link sub-menu-link"><span>Candidate Database</span></a></li>
+</ul>
+</li>
+<li class="nav-menu-item-15318 main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://dataconomy.tradepub.com/" class="menu-link main-menu-link"><span>Research Papers</span></a></li>
+</ul>
+</nav>
+<!-- End Mobile Menu --></header>
+<!-- End Site Header : Left Logo -->
+
+
+
+<div class="vw-page-title-section vw-has-no-background clearfix">
+	<div class="vw-page-title-section-overlay">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="vw-page-title-section-inner">
+
+						<div class="vw-page-title-box clearfix">
+
+
+								<div class="vw-page-title-box-inner">
+									<div class="vw-post-categories"><a class=" vw-category-link vw-cat-id-3229" href="https://dataconomy.com/category/topics/data-science/artificial-intelligence/" title="View all posts in Artificial Intelligence" rel="category">Artificial Intelligence</a><a class=" vw-category-link vw-cat-id-3229 vw-category-link vw-cat-id-340" href="https://dataconomy.com/category/topics/data-science/" title="View all posts in Data Science" rel="category">Data Science</a><a class=" vw-category-link vw-cat-id-3229 vw-category-link vw-cat-id-340 vw-category-link vw-cat-id-347" href="https://dataconomy.com/category/topics/data-science/machine-learning/" title="View all posts in Machine Learning" rel="category">Machine Learning</a></div>									<h1 class="vw-page-title">The History of Neural Networks</h1>
+
+																			<div class="vw-post-meta vw-post-meta-large">
+	<div class="vw-post-meta-inner">
+
+		<span class="vw-post-author"  itemprop="author"  itemscope itemtype="http://schema.org/Person" >
+
+			<a class="vw-author-avatar" href="https://dataconomy.com/author/eugenio-culurciello/" title="Posts by Eugenio Culurciello"><img itemprop="image" src="https://dataconomy.com/wp-content/authors/Eugenio%20Culurciello-148.png" class="avatar photo" alt="Eugenio Culurciello" width="25" height="25" /></a>
+
+
+
+					<a class="author-name" href="https://dataconomy.com/author/eugenio-culurciello/" title="View all posts by Eugenio Culurciello" rel="author"  itemprop="name" >Eugenio Culurciello</a>
+
+
+
+		</span>
+
+		<span class="vw-post-meta-separator">&middot;</span>
+
+		<a href="https://dataconomy.com/2017/04/history-neural-networks/" class="vw-post-date updated" title="Permalink to The History of Neural Networks" rel="bookmark"><i class="icon-entypo-clock"></i><time  itemprop="datePublished"  datetime="2017-04-19T10:00:14+01:00">April 19, 2017</time></a>
+	</div>
+
+	<div class="vw-post-meta-icons">
+
+				<a class="vw-post-meta-icon vw-post-comment-count" href="https://dataconomy.com/2017/04/history-neural-networks/#comments" title="Comments">
+			<i class="vw-icon icon-iconic-comment-alt2"></i> <span class="dsq-postid" data-dsqidentifier="17754 https://dataconomy.com/?p=17754">1</span>		</a>
+
+		<a href="#" class="vw-post-meta-icon vw-post-likes-count " id="vw-post-likes-id-17754" data-post-id="17754" title="Likes"><i class="vw-icon icon-iconic-heart"></i><span class="vw-post-likes-number">1</span></a>
+		<span class="vw-post-meta-icon vw-post-view-count vw-post-views-id-17754" data-post-id="17754" title="Views"> <i class="vw-icon icon-iconic-eye"></i> <span class="vw-post-view-number">17.7k</span></span>
+				<a class="vw-post-share-count vw-post-meta-icon" href="#vw-post-shares-dialog" title="Shares">
+			<i class="vw-icon icon-iconic-share"></i> <span class="vw-post-share-number">1</span>
+		</a>
+
+	</div>
+</div>																	</div>
+
+
+							<div class="vw-page-title-divider"></div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="vw-page-wrapper clearfix vw-sidebar-position-right">
+	<div class="container">
+		<div class="row">
+
+			<div class="vw-page-content" role="main">
+
+
+
+											<article class="vw-main-post clearfix post-17754 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-data-science category-machine-learning tag-deep-learning tag-neural-networks"  itemscope itemtype="http://schema.org/Article" >
+
+							<span class="author vcard hidden"><span class="fn">Eugenio Culurciello</span></span>
+							<span class="updated hidden">2017-04-19</span>
+							<meta itemprop="headline" content="The History of Neural Networks"/>							<meta itemprop="datePublished" content="2017-04-19T10:00:14+01:00"/>							<meta itemprop="image" content="https://dataconomy.com/wp-content/uploads/2017/04/nerve-cell-2213009.jpg"/>
+
+							<div class="vw-post-content clearfix"  itemprop="articleBody" ><p id="27d7" class="graf graf--p graf-after--h3">Deep neural networks and Deep Learning are powerful and popular algorithms. And a lot of their success lays in the careful design of the neural network architecture.</p>
+<p id="20fc" class="graf graf--p graf-after--p">I wanted to revisit the history of neural network design in the last few years and in the context of Deep Learning.</p>
+<p id="6a13" class="graf graf--p graf-after--p">For a more in-depth analysis and comparison of all the networks reported here, please see our <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1605.07678" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1605.07678">recent article</a>. One representative figure from this article is here:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/1*kBpEOy4fzLiFxRLjpxAX6A.png" /></p>
+<p id="fda1" class="graf graf--p graf-after--figure">Reporting top-1 one-crop accuracy versus amount of operations required for a single forward pass in multiple popular neural network architectures.</p>
+<h3 id="30ea" class="graf graf--h3 graf-after--p">LeNet5</h3>
+<p id="ebbd" class="graf graf--p graf-after--h3">It is the year 1994, and this is one of the very first convolutional neural networks, and what propelled the field of Deep Learning. This pioneering work by Yann LeCun was named <a class="markup--anchor markup--p-anchor" href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf" target="_blank" rel="nofollow noopener" data-href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf">LeNet5</a> after many previous successful iterations since they year 1988!</p>
+<p class="graf graf--p graf-after--h3"><img src="https://cdn-images-1.medium.com/max/800/0*V1vb9SDnsU1eZQUy.jpg" /></p>
+<p id="88ce" class="graf graf--p graf-after--figure">The LeNet5 architecture was fundamental, in particular the insight that image features are distributed across the entire image, and convolutions with learnable parameters are an effective way to extract similar features at multiple location with few parameters. At the time there was no GPU to help training, and even CPUs were slow. Therefore being able to save parameters and computation was a key advantage. This is in contrast to using each pixel as a separate input of a large multi-layer neural network. LeNet5 explained that those should not be used in the first layer, because images are highly spatially correlated, and using individual pixel of the image as separate input features would not take advantage of these correlations.</p>
+<p id="adbe" class="graf graf--p graf-after--p">LeNet5 features can be summarized as:</p>
+<ul class="postList">
+<li id="f34c" class="graf graf--li graf-after--p">convolutional neural network use sequence of 3 layers: convolution, pooling, non-linearity –&gt; This may be the key feature of Deep Learning for images since this paper!</li>
+<li id="ce1c" class="graf graf--li graf-after--li">use convolution to extract spatial features</li>
+<li id="9b3a" class="graf graf--li graf-after--li">subsample using spatial average of maps</li>
+<li id="109b" class="graf graf--li graf-after--li">non-linearity in the form of tanh or sigmoids</li>
+<li id="5e28" class="graf graf--li graf-after--li">multi-layer neural network (MLP) as final classifier</li>
+<li id="bbe4" class="graf graf--li graf-after--li">sparse connection matrix between layers to avoid large computational cost</li>
+</ul>
+<p id="8f76" class="graf graf--p graf-after--li">In overall this network was the origin of much of the recent architectures, and a true inspiration for many people in the field.</p>
+<h3 id="4185" class="graf graf--h3 graf-after--p">The gap</h3>
+<p id="c85b" class="graf graf--p graf-after--h3">In the years from 1998 to 2010 neural network were in incubation. Most people did not notice their increasing power, while many other researchers slowly progressed. More and more data was available because of the rise of cell-phone cameras and cheap digital cameras. And computing power was on the rise, CPUs were becoming faster, and GPUs became a general-purpose computing tool. Both of these trends made neural network progress, albeit at a slow rate. Both data and computing power made the tasks that neural networks tackled more and more interesting. And then it became clear…</p>
+<h3 id="05c5" class="graf graf--h3 graf-after--p">Dan Ciresan Net</h3>
+<p id="b323" class="graf graf--p graf-after--h3">In 2010 Dan Claudiu Ciresan and Jurgen Schmidhuber published one of the very fist implementations of <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1003.0358" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1003.0358">GPU Neural nets</a>. This implementation had both forward and backward implemented on a a <a class="markup--anchor markup--p-anchor" href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-280" target="_blank" rel="nofollow noopener" data-href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-280">NVIDIA GTX 280</a> graphic processor of an up to 9 layers neural network.</p>
+<h3 id="7185" class="graf graf--h3 graf-after--p">AlexNet</h3>
+<p id="7487" class="graf graf--p graf-after--h3">In 2012, Alex Krizhevsky released <a class="markup--anchor markup--p-anchor" href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" target="_blank" rel="nofollow noopener" data-href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a> which was a deeper and much wider version of the LeNet and won by a large margin the difficult ImageNet competition.</p>
+<p class="graf graf--p graf-after--h3"><img src="https://cdn-images-1.medium.com/max/800/0*vsi8JJFV_O6Z34ks.png" /></p>
+<p id="d105" class="graf graf--p graf-after--figure">AlexNet scaled the insights of LeNet into a much larger neural network that could be used to learn much more complex objects and object hierarchies. The contribution of this work were:</p>
+<ul class="postList">
+<li id="6754" class="graf graf--li graf-after--p">use of rectified linear units (ReLU) as non-linearities</li>
+<li id="c10e" class="graf graf--li graf-after--li">use of dropout technique to selectively ignore single neurons during training, a way to avoid overfitting of the model</li>
+<li id="a0bf" class="graf graf--li graf-after--li">overlapping max pooling, avoiding the averaging effects of average pooling</li>
+<li id="99df" class="graf graf--li graf-after--li">use of GPUs <a class="markup--anchor markup--li-anchor" href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-580/specifications" target="_blank" rel="nofollow noopener" data-href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-580/specifications">NVIDIA GTX 580</a> to reduce training time</li>
+</ul>
+<p id="6dbe" class="graf graf--p graf-after--li">At the time GPU offered a much larger number of cores than CPUs, and allowed 10x faster training time, which in turn allowed to use larger datasets and also bigger images.</p>
+<p id="6fbb" class="graf graf--p graf-after--p">The success of AlexNet started a small revolution. Convolutional neural network were now the workhorse of Deep Learning, which became the new name for “large neural networks that can now solve useful tasks”.</p>
+<h3 id="8d17" class="graf graf--h3 graf-after--p">Overfeat</h3>
+<p id="8456" class="graf graf--p graf-after--h3">In December 2013 the NYU lab from Yann LeCun came up with <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1312.6229" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1312.6229">Overfeat</a>, which is a derivative of AlexNet. The article also proposed learning bounding boxes, which later gave rise to many other papers on the same topic. I believe it is better to learn to segment objects rather than learn artificial bounding boxes.</p>
+<h3 id="c92a" class="graf graf--h3 graf-after--p">VGG</h3>
+<p id="745c" class="graf graf--p graf-after--h3">The <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1409.1556" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1409.1556">VGG networks</a> from Oxford were the first to use much smaller 3×3 filters in each convolutional layers and also combined them as a sequence of convolutions.</p>
+<p id="723a" class="graf graf--p graf-after--p">This seems to be contrary to the principles of LeNet, where large convolutions were used to capture similar features in an image. Instead of the 9×9 or 11×11 filters of AlexNet, filters started to become smaller, too dangerously close to the infamous 1×1 convolutions that LeNet wanted to avoid, at least on the first layers of the network. But the great advantage of VGG was the insight that multiple 3×3 convolution in sequence can emulate the effect of larger receptive fields, for examples 5×5 and 7×7. These ideas will be also used in more recent network architectures as Inception and ResNet.</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*HREIJ1hjF7z4y9Dd.jpg" /></p>
+<p id="be3a" class="graf graf--p graf-after--figure">The VGG networks uses multiple 3&#215;3 convolutional layers to represent complex features. Notice blocks 3, 4, 5 of VGG-E: 256×256 and 512×512 3×3 filters are used multiple times in sequence to extract more complex features and the combination of such features. This is effectively like having large 512×512 classifiers with 3 layers, which are convolutional! This obviously amounts to a massive number of parameters, and also learning power. But training of these network was difficult, and had to be split into smaller networks with layers added one by one. All this because of the lack of strong ways to regularize the model, or to somehow restrict the massive search space promoted by the large amount of parameters.</p>
+<p id="1b4c" class="graf graf--p graf-after--p">VGG used large feature sizes in many layers and thus inference was quite <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1605.07678" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1605.07678">costly at run-time</a>. Reducing the number of features, as done in Inception bottlenecks, will save some of the computational cost.</p>
+<h3 id="a798" class="graf graf--h3 graf-after--p">Network-in-network</h3>
+<p id="b5ad" class="graf graf--p graf-after--h3"><a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1312.4400" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1312.4400">Network-in-network</a> (NiN) had the great and simple insight of using 1&#215;1 convolutions to provide more combinational power to the features of a convolutional layers.</p>
+<p id="3170" class="graf graf--p graf-after--p">The NiN architecture used spatial MLP layers after each convolution, in order to better combine features before another layer. Again one can think the 1&#215;1 convolutions are against the original principles of LeNet, but really they instead help to combine convolutional features in a better way, which is not possible by simply stacking more convolutional layers. This is different from using raw pixels as input to the next layer. Here 1×1 convolution are used to spatially combine features across features maps after convolution, so they effectively use very few parameters, shared across all pixels of these features!</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*JIa4PbbfSFqNedPW.jpg" /></p>
+<p id="2e1e" class="graf graf--p graf-after--figure">The power of MLP can greatly increase the effectiveness of individual convolutional features by combining them into more complex groups. This idea will be later used in most recent architectures as ResNet and Inception and derivatives.</p>
+<p id="26ab" class="graf graf--p graf-after--p">NiN also used an average pooling layer as part of the last classifier, another practice that will become common. This was done to average the response of the network to multiple are of the input image before classification.</p>
+<h3 id="9bfd" class="graf graf--h3 graf-after--p">GoogLeNet and Inception</h3>
+<p id="3687" class="graf graf--p graf-after--h3">Christian Szegedy from Google begun a quest aimed at reducing the computational burden of deep neural networks, and devised the <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1409.4842" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1409.4842">GoogLeNet the first Inception architecture</a>.</p>
+<p id="b811" class="graf graf--p graf-after--p">By now, Fall 2014, deep learning models were becoming extermely useful in categorizing the content of images and video frames. Most skeptics had given in that Deep Learning and neural nets came back to stay this time. Given the usefulness of these techniques, the internet giants like Google were very interested in efficient and large deployments of architectures on their server farms.</p>
+<p id="84af" class="graf graf--p graf-after--p">Christian thought a lot about ways to reduce the computational burden of deep neural nets while obtaining state-of-art performance (on ImageNet, for example). Or be able to keep the computational cost the same, while offering improved performance.</p>
+<p id="f65c" class="graf graf--p graf-after--p">He and his team came up with the Inception module:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*CJZdXZULMr_on1Ao.jpg" /></p>
+<p id="ce0a" class="graf graf--p graf-after--figure">which at a first glance is basically the parallel combination of 1×1, 3×3, and 5×5 convolutional filters. But the great insight of the inception module was the use of 1×1 convolutional blocks (NiN) to reduce the number of features before the expensive parallel blocks. This is commonly referred as “bottleneck”. This deserves its own section to explain: see “bottleneck layer” section below.</p>
+<p id="0f2b" class="graf graf--p graf-after--p">GoogLeNet used a stem without inception modules as initial layers, and an average pooling plus softmax classifier similar to NiN. This classifier is also extremely low number of operations, compared to the ones of AlexNet and VGG. This also contributed to a <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1605.07678" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1605.07678">very efficient network design</a>.</p>
+<h3 id="4806" class="graf graf--h3 graf-after--p">Bottleneck layer</h3>
+<p id="8130" class="graf graf--p graf-after--h3">Inspired by NiN, the bottleneck layer of Inception was reducing the number of features, and thus operations, at each layer, so the inference time could be kept low. Before passing data to the expensive convolution modules, the number of features was reduce by, say, 4 times. This led to large savings in computational cost, and the success of this architecture.</p>
+<p id="1ddd" class="graf graf--p graf-after--p">Let’s examine this in detail. Let’s say you have 256 features coming in, and 256 coming out, and let’s say the Inception layer only performs 3&#215;3 convolutions. That is 256&#215;256 x 3&#215;3 convolutions that have to be performed (589,000s multiply-accumulate, or MAC operations). That may be more than the computational budget we have, say, to run this layer in 0.5 milli-seconds on a Google Server. Instead of doing this, we decide to reduce the number of features that will have to be convolved, say to 64 or 256/4. In this case, we first perform 256 -&gt; 64 1×1 convolutions, then 64 convolution on all Inception branches, and then we use again a 1&#215;1 convolution from 64 -&gt; 256 features back again. The operations are now:</p>
+<ul class="postList">
+<li id="62d3" class="graf graf--li graf-after--p">256×64 × 1×1 = 16,000s</li>
+<li id="b020" class="graf graf--li graf-after--li">64×64 × 3×3 = 36,000s</li>
+<li id="13f1" class="graf graf--li graf-after--li">64×256 × 1×1 = 16,000s</li>
+</ul>
+<p id="6256" class="graf graf--p graf-after--li">For a total of about 70,000 versus the almost 600,000 we had before. Almost 10x less operations!</p>
+<p id="1940" class="graf graf--p graf-after--p">And although we are doing less operations, we are not losing generality in this layer. In fact the bottleneck layers have been proven to perform at state-of-art on the ImageNet dataset, for example, and will be also used in later architectures such as ResNet.</p>
+<p id="cc23" class="graf graf--p graf-after--p">The reason for the success is that the input features are correlated, and thus redundancy can be removed by combining them appropriately with the 1&#215;1 convolutions. Then, after convolution with a smaller number of features, they can be expanded again into meaningful combination for the next layer.</p>
+<h3 id="74ff" class="graf graf--h3 graf-after--p">Inception V3 (and V2)</h3>
+<p id="28ab" class="graf graf--p graf-after--h3">Christian and his team are very efficient researchers. In February 2015 <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1502.03167" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1502.03167">Batch-normalized Inception</a> was introduced as Inception V2. Batch-normalization computes the mean and standard-deviation of all feature maps at the output of a layer, and normalizes their responses with these values. This corresponds to “whitening” the data, and thus making all the neural maps have responses in the same range, and with zero mean. This helps training as the next layer does not have to learn offsets in the input data, and can focus on how to best combine features.</p>
+<p id="f8a9" class="graf graf--p graf-after--p">In December 2015 they released a <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1512.00567" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1512.00567">new version of the Inception modules and the corresponding architecture</a> This article better explains the original GoogLeNet architecture, giving a lot more detail on the design choices. A list of the original ideas are:</p>
+<ul class="postList">
+<li id="43a0" class="graf graf--li graf-after--p">maximize information flow into the network, by carefully constructing networks that balance depth and width. Before each pooling, increase the feature maps.</li>
+<li id="7d71" class="graf graf--li graf-after--li">when depth is increased, the number of features, or width of the layer is also increased systematically</li>
+<li id="d6d5" class="graf graf--li graf-after--li">use width increase at each layer to increase the combination of features before next layer</li>
+<li id="feca" class="graf graf--li graf-after--li">use only 3&#215;3 convolution, when possible, given that filter of 5&#215;5 and 7&#215;7 can be decomposed with multiple 3&#215;3. See figure:</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*FPt8z6-yKjzdob4E.jpg" /></p>
+<ul class="postList">
+<li id="448f" class="graf graf--li graf-after--figure">the new inception module thus becomes:</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*Y9mKbwp1R8vAmT2L.jpg" /></p>
+<ul class="postList">
+<li id="c027" class="graf graf--li graf-after--figure">filters can also be decomposed by <a class="markup--anchor markup--li-anchor" href="http://arxiv.org/abs/1412.5474" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1412.5474">flattened convolutions</a> into more complex modules:</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*rRv_N9rLYJnmq6jz.jpg" /></p>
+<ul class="postList">
+<li id="64b8" class="graf graf--li graf-after--figure">inception modules can also decrease the size of the data by provide pooling while performing the inception computation. This is basically identical to performing a convolution with strides in parallel with a simple pooling layer:</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*rxf30_SJRsbFIFCW.jpg" /></p>
+<p id="8a03" class="graf graf--p graf-after--figure">Inception still uses a pooling layer plus softmax as final classifier.</p>
+<h3 id="a4b3" class="graf graf--h3 graf-after--p">ResNet</h3>
+<p id="dd77" class="graf graf--p graf-after--h3">The revolution then came in December 2015, at about the same time as Inception v3. <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1512.03385" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1512.03385">ResNet</a> have a simple ideas: feed the output of two successive convolutional layer AND also bypass the input to the next layers!</p>
+<p class="graf graf--p graf-after--h3"><img src="https://cdn-images-1.medium.com/max/800/0*0r0vS8myiqyOb79L.jpg" /></p>
+<p id="0c86" class="graf graf--p graf-after--figure">This is similar to older ideas like <a class="markup--anchor markup--p-anchor" href="http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf" target="_blank" rel="nofollow noopener" data-href="http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf">this one</a>. But here they bypass TWO layers and are applied to large scales. Bypassing after 2 layers is a key intuition, as bypassing a single layer did not give much improvements. By 2 layers can be thought as a small classifier, or a Network-In-Network!</p>
+<p id="9591" class="graf graf--p graf-after--p">This is also the very first time that a network of &gt; hundred, even 1000 layers was trained.</p>
+<p id="d165" class="graf graf--p graf-after--p">ResNet with a large number of layers started to use a bottleneck layer similar to the Inception bottleneck:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*9tCUFp28oQGOK6bE.jpg" /></p>
+<p id="9f1f" class="graf graf--p graf-after--figure">This layer reduces the number of features at each layer by first using a 1&#215;1 convolution with a smaller output (usually 1/4 of the input), and then a 3&#215;3 layer, and then again a 1&#215;1 convolution to a larger number of features. Like in the case of Inception modules, this allows to keep the computation low, while providing rich combination of features. See “bottleneck layer” section after “GoogLeNet and Inception”.</p>
+<p id="e6ab" class="graf graf--p graf-after--p">ResNet uses a fairly simple initial layers at the input (stem): a 7&#215;7 conv layer followed with a pool of 2. Contrast this to more complex and less intuitive stems as in Inception V3, V4.</p>
+<p id="067f" class="graf graf--p graf-after--p">ResNet also uses a pooling layer plus softmax as final classifier.</p>
+<p id="a5e3" class="graf graf--p graf-after--p">Additional insights about the ResNet architecture are appearing every day:</p>
+<ul class="postList">
+<li id="807c" class="graf graf--li graf-after--p">ResNet can be seen as both parallel and serial modules, by just thinking of the inout as going to many modules in parallel, while the output of each modules connect in series</li>
+<li id="83a0" class="graf graf--li graf-after--li">ResNet can also be thought as <a class="markup--anchor markup--li-anchor" href="http://arxiv.org/abs/1605.06431" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1605.06431">multiple ensembles of parallel or serial modules</a></li>
+<li id="79e8" class="graf graf--li graf-after--li">it has been found that ResNet usually operates on blocks of relatively low depth ~20–30 layers, which act in parallel, rather than serially flow the entire length of the network.</li>
+<li id="5e3c" class="graf graf--li graf-after--li">ResNet, when the output is fed back to the input, as in RNN, the network can be seen as a better <a class="markup--anchor markup--li-anchor" href="https://arxiv.org/abs/1604.03640" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1604.03640">bio-plausible model of the cortex</a></li>
+</ul>
+<h3 id="5bac" class="graf graf--h3 graf-after--li">Inception V4</h3>
+<p id="c94d" class="graf graf--p graf-after--h3">And Christian and team are at it again with a <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1602.07261" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1602.07261">new version of Inception</a>.</p>
+<p id="0198" class="graf graf--p graf-after--p">The Inception module after the stem is rather similar to Inception V3:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*SJ7DP_-0R1vdpVzv.jpg" /></p>
+<p class="graf graf--p graf-after--p">They also combined the Inception module with the ResNet module:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*exGWbD4A0QKM2lU_.jpg" /></p>
+<p id="6ad2" class="graf graf--p graf-after--figure">This time though the solution is, in my opinion, less elegant and more complex, but also full of less transparent heuristics. It is hard to understand the choices and it is also hard for the authors to justify them.</p>
+<p id="7d45" class="graf graf--p graf-after--p">In this regard the prize for a clean and simple network that can be easily understood and modified now goes to ResNet.</p>
+<h3 id="ff2b" class="graf graf--h3 graf-after--p">SqueezeNet</h3>
+<p id="26a3" class="graf graf--p graf-after--h3"><a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1602.07360" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1602.07360">SqueezeNet</a> has been recently released. It is a re-hash of many concepts from ResNet and Inception, and show that after all, a better design of architecture will deliver small network sizes and parameters without needing complex compression algorithms.</p>
+<h3 id="b435" class="graf graf--h3 graf-after--p">ENet</h3>
+<p id="f055" class="graf graf--p graf-after--h3">Our team set up to combine all the features of the recent architectures into a very efficient and light-weight network that uses very few parameters and computation to achieve state-of-the-art results. This network architecture is dubbed <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1606.02147" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1606.02147">ENet</a>, and was designed by <a class="markup--anchor markup--p-anchor" href="https://apaszke.github.io/posts.html" target="_blank" rel="nofollow noopener" data-href="https://apaszke.github.io/posts.html">Adam Paszke</a>. We have used it to perform pixel-wise labeling and scene-parsing. Here are <a class="markup--anchor markup--p-anchor" href="https://www.youtube.com/watch?v=3jq4FnO5Nco&amp;list=PLNgy4gid0G9c4qiVBrERE_5v_b1pu-5pQ" target="_blank" rel="nofollow noopener" data-href="https://www.youtube.com/watch?v=3jq4FnO5Nco&amp;list=PLNgy4gid0G9c4qiVBrERE_5v_b1pu-5pQ">some videos of ENet in action</a>. These videos are not part of the <a class="markup--anchor markup--p-anchor" href="https://www.cityscapes-dataset.com/" target="_blank" rel="nofollow noopener" data-href="https://www.cityscapes-dataset.com/">training dataset</a>.</p>
+<p id="0a42" class="graf graf--p graf-after--p"><a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1606.02147" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1606.02147">The technical report on ENet is available here</a>. ENet is a encoder plus decoder network. The encoder is a regular CNN design for categorization, while the decoder is a upsampling network designed to propagate the categories back into the original image size for segmentation. This worked used only neural networks, and no other algorithm to perform image segmentation.</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/1*rokvtiIyLgMqkJiORkaLvA.png" /></p>
+<p id="d017" class="graf graf--p graf-after--figure">As you can see in this figure ENet has the highest accuracy per parameter used of any neural network out there!</p>
+<p id="e028" class="graf graf--p graf-after--p">ENet was designed to use the minimum number of resources possible from the start. As such it achieves such a small footprint that both encoder and decoder network together only occupies 0.7 MB with fp16 precision. Even at this small size, ENet is similar or above other pure neural network solutions in accuracy of segmentation.</p>
+<h3 id="f0b2" class="graf graf--h3 graf-after--p">An analysis of modules</h3>
+<p id="c849" class="graf graf--p graf-after--h3">A systematic evaluation of CNN modules <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1606.02228" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1606.02228">has been presented</a>. The found out that is advantageous to use:</p>
+<p id="09e9" class="graf graf--p graf-after--p">• use ELU non-linearity without batchnorm or ReLU with it.</p>
+<p id="be0e" class="graf graf--p graf-after--p">• apply a learned colorspace transformation of RGB.</p>
+<p id="5072" class="graf graf--p graf-after--p">• use the linear learning rate decay policy.</p>
+<p id="d493" class="graf graf--p graf-after--p">• use a sum of the average and max pooling layers.</p>
+<p id="bc35" class="graf graf--p graf-after--p">• use mini-batch size around 128 or 256. If this is too big for your GPU, decrease the learning rate proportionally to the batch size.</p>
+<p id="cb0d" class="graf graf--p graf-after--p">• use fully-connected layers as convolutional and average the predictions for the final decision.</p>
+<p id="9088" class="graf graf--p graf-after--p">• when investing in increasing training set size, check if a plateau has not been reach. • cleanliness of the data is more important then the size.</p>
+<p id="0b51" class="graf graf--p graf-after--p">• if you cannot increase the input image size, reduce the stride in the con- sequent layers, it has roughly the same effect.</p>
+<p id="c41a" class="graf graf--p graf-after--p">• if your network has a complex and highly optimized architecture, like e.g. GoogLeNet, be careful with modifications.</p>
+<h3 id="5f79" class="graf graf--h3 graf-after--p">Xception</h3>
+<p id="490b" class="graf graf--p graf-after--h3"><a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1610.02357" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1610.02357">Xception</a> improves on the inception module and architecture with a simple and more elegant architecture that is as effective as ResNet and Inception V4.</p>
+<p id="8735" class="graf graf--p graf-after--p">The Xception module is presented here:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*V7nfBsZsE6tlI92Y.jpg" /></p>
+<p class="graf graf--p graf-after--p">This network can be anyone’s favorite given the simplicity and elegance of the architecture, presented here:</p>
+<p class="graf graf--p graf-after--p"><img src="https://cdn-images-1.medium.com/max/800/0*l4NLzvWleahcwnck.jpg" /></p>
+<p id="b0b1" class="graf graf--p graf-after--figure">The architecture has 36 convolutional stages, making it close in similarity to a ResNet-34. But the model and code is as simple as ResNet and much more comprehensible than Inception V4.</p>
+<p id="be3d" class="graf graf--p graf-after--p">A Torch7 implementation of this network is available <a class="markup--anchor markup--p-anchor" href="https://gist.github.com/culurciello/554c8e56d3bbaf7c66bf66c6089dc221" target="_blank" rel="nofollow noopener" data-href="https://gist.github.com/culurciello/554c8e56d3bbaf7c66bf66c6089dc221">here</a> An implementation in Keras/TF is availble <a class="markup--anchor markup--p-anchor" href="https://keras.io/applications/#xception" target="_blank" rel="nofollow noopener" data-href="https://keras.io/applications/#xception">here</a>.</p>
+<p id="b128" class="graf graf--p graf-after--p">It is interesting to note that the recent Xception architecture was also inspired by <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1412.5474" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1412.5474">our work on separable convolutional filters</a>.</p>
+<h3 id="0250" class="graf graf--h3 graf-after--p">Other notable architectures</h3>
+<p id="0124" class="graf graf--p graf-after--h3"><a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1605.07648" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1605.07648">FractalNet</a> uses a recursive architecture, that was not tested on ImageNet, and is a derivative or the more general ResNet.</p>
+<h3 id="2fe8" class="graf graf--h3 graf-after--p">The future</h3>
+<p id="484a" class="graf graf--p graf-after--h3">We believe that crafting neural network architectures is of paramount importance for the progress of the Deep Learning field. Our group highly recommends reading carefully and understanding all the papers in this post.</p>
+<p id="ad50" class="graf graf--p graf-after--p">But one could now wonder why we have to spend so much time in crafting architectures, and why instead we do not use data to tell us what to use, and how to combine modules. This would be nice, but now it is work in progress. Some initial interesting results are <a class="markup--anchor markup--p-anchor" href="https://arxiv.org/abs/1606.06216" target="_blank" rel="nofollow noopener" data-href="https://arxiv.org/abs/1606.06216">here</a>.</p>
+<p id="857d" class="graf graf--p graf-after--p">Note also that here we mostly talked about architectures for computer vision. Similarly neural network architectures developed in other areas, and it is interesting to study the evolution of architectures for all other tasks also.</p>
+<p id="0dad" class="graf graf--p graf-after--p">If you are interested in a comparison of neural network architecture and computational performance, see <a class="markup--anchor markup--p-anchor" href="http://arxiv.org/abs/1605.07678" target="_blank" rel="nofollow noopener" data-href="http://arxiv.org/abs/1605.07678">our recent paper</a>.</p>
+<h3 id="742b" class="graf graf--h3 graf-after--p">Acknowledgments</h3>
+<p id="c7c7" class="graf graf--p graf-after--h3 graf--trailing">This post was inspired by discussions with Abhishek Chaurasia, Adam Paszke, Sangpil Kim, Alfredo Canziani and others in our e-Lab at Purdue University.</p>
+
+</div>
+
+
+
+	</body>
+
+</html>
